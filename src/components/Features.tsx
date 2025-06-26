@@ -50,7 +50,7 @@ const Features = () => {
             Everything You Need for Healthy Living
           </h2>
           <p
-            className="fs-5 text-success text-opacity-75 mx-auto"
+            className="fs-5 fw-medium text-success text-opacity-75 mx-auto"
             style={{ maxWidth: "600px" }}
           >
             Our comprehensive platform combines AI intelligence with nutritional
@@ -62,7 +62,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`col-md-6 col-lg-3 card border-success shadow-sm `}
+              className={`col-md-6 col-lg-3 card border-success-subtle shadow-sm py-4`}
               style={{
                 transition: "all 0.5s ease",
                 transitionDelay: `${index * 100}ms`,

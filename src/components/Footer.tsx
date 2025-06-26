@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container text-center">
         <div className="d-flex align-items-center justify-content-center mb-3">
           <LuChefHat className="me-2" />
-          <span className="fs-4 fw-bold">NutriPlan AI</span>
+          <span className="fs-4 fw-bold">MealPlan AI</span>
         </div>
         <p className="text-light mb-3">
           Empowering healthy living through intelligent nutrition planning
