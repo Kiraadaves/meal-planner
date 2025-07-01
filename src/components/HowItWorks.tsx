@@ -1,19 +1,11 @@
 const HowItWorks = () => {
   return (
-    <section
-      className="py-5 px-3"
-      style={{
-        backgroundImage: "url('/bg.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="w-90 mx-auto" style={{ maxWidth: "1200px" }}>
+    <section className="py-5 px-3 bg-success bg-opacity-10">
+      <div className="w-90 mx-auto my-5" style={{ maxWidth: "1200px" }}>
         <div className="text-center mb-5">
-          <h2 className="fs-2 fw-bold text-success mb-3">
+          <h1 className="display-4 fw-bold text-success text-success mb-5">
             How NutriPlan AI Works
-          </h2>
+          </h1>
           <p
             className="fs-5 text-success text-opacity-75 mx-auto"
             style={{ maxWidth: "600px" }}
@@ -23,7 +15,7 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="row gap-4 justify-content-center">
+        <div className="row gap-4 justify-content-center my-5">
           {[
             {
               step: "1",

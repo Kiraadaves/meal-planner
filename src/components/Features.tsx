@@ -44,13 +44,13 @@ const features = [
 const Features = () => {
   return (
     <section id="features" className="py-5 ">
-      <div className="">
+      <div className="my-5">
         <div className="text-center mb-4">
-          <h2 className="fs-2 fw-bold text-success mb-3">
+          <h1 className="display-4 fw-bold text-success text-success my-3">
             Everything You Need for Healthy Living
-          </h2>
+          </h1>
           <p
-            className="fs-5 fw-medium text-success text-opacity-75 mx-auto"
+            className="fs-5 fw-medium text-success text-opacity-75 mx-auto mt-4"
             style={{ maxWidth: "600px" }}
           >
             Our comprehensive platform combines AI intelligence with nutritional
@@ -58,7 +58,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="row gap-4 justify-content-center  px-4">
+        <div className="row gap-4 justify-content-center mt-5  px-4">
           {features.map((feature, index) => (
             <div
               key={index}
