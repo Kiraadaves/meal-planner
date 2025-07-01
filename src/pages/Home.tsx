@@ -12,7 +12,7 @@ const Home = () => {
       <main className="flex-grow-1">
         <Hero />
         <Features />
-        <HowItWorks />
+        <HowItWorks id="how-it-works"/>
         <Cta />
       </main>
       <Footer />

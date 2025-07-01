@@ -1,17 +1,21 @@
 import { LuChefHat } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Nav = () => {
   return (
-    <nav className="p-4 navbar navbar-expand-lg border-bottom border-success-subtle bg-white bg-opacity-80 sticky-top">
+    <nav className="p-4 navbar navbar-expand-lg border-bottom border-success-subtle bg-white bg-opacity-80 fixed-top">
       <div className="container-fluid">
-        <div className="d-flex align-items-center gap-2">
+        <Link
+          to="/"
+          className="d-flex align-items-center gap-2 text-decoration-none"
+        >
           <LuChefHat
             className="text-success"
-            style={{ height: "32px", width: "32px" }}
+            style={{ height: "40px", width: "40px" }}
           />
-          <span className="fs-4 fw-bold text-success">NutriPlan AI</span>
-        </div>
+          <span className="fs-3 fw-bold text-success">NutriPlan AI</span>
+        </Link>
         <button
           className="navbar-toggler border-success "
           type="button"
@@ -24,20 +28,25 @@ const Nav = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <div className="d-flex ms-auto align-items-center gap-3">
-            <Link
+          <div className="d-flex ms-auto align-items-center gap-5">
+            <HashLink
+              smooth
               to="#features"
-              className="text-success text-decoration-none hover-success"
+              className="fs-5 fw-medium text-success text-decoration-none hover-success"
             >
               Features
-            </Link>
-            <Link
+            </HashLink>
+            <HashLink
+              smooth
               to="#how-it-works"
-              className="text-success text-decoration-none hover-success"
+              className="fs-5 fw-medium text-success text-decoration-none hover-success"
             >
               How it Works
-            </Link>
-            <Link to="/dashboard" className="btn btn-success py-2 fw-medium">
+            </HashLink>
+            <Link
+              to="/dashboard"
+              className="fs-5 fw-medium btn btn-success py-2 fw-medium"
+            >
               Get Started
             </Link>
           </div>

@@ -1,13 +1,17 @@
-const HowItWorks = () => {
+interface HowItWorksProps {
+  id: string;
+}
+
+const HowItWorks: React.FC<HowItWorksProps> = ({ id }) => {
   return (
-    <section className="py-5 px-3 bg-success bg-opacity-10">
-      <div className="w-90 mx-auto my-5" style={{ maxWidth: "1200px" }}>
+    <section className="py-5 px-3 bg-success bg-opacity-10" id={id}>
+      <div className="w-90 mx-auto my-3 my-lg-5" style={{ maxWidth: "1200px" }}>
         <div className="text-center mb-5">
           <h1 className="display-4 fw-bold text-success text-success mb-5">
             How NutriPlan AI Works
           </h1>
           <p
-            className="fs-5 text-success text-opacity-75 mx-auto"
+            className="fs-4 text-success text-opacity-75 mx-auto"
             style={{ maxWidth: "600px" }}
           >
             Get started in three simple steps and transform your nutrition
@@ -15,7 +19,7 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="row gap-4 justify-content-center my-5">
+        <div className="row gap-4 justify-content-center my-3 my-lg-5">
           {[
             {
               step: "1",
@@ -50,7 +54,9 @@ const HowItWorks = () => {
                 {step.step}
               </div>
               <h3 className="fs-4 fw-bold text-success mb-3">{step.title}</h3>
-              <p className="text-success text-opacity-75">{step.description}</p>
+              <p className=" text-success text-opacity-75">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>

@@ -44,13 +44,13 @@ const features = [
 const Features = () => {
   return (
     <section id="features" className="py-5 ">
-      <div className="my-5">
+      <div className="my-3 my-lg-5">
         <div className="text-center mb-4">
           <h1 className="display-4 fw-bold text-success text-success my-3">
             Everything You Need for Healthy Living
           </h1>
           <p
-            className="fs-5 fw-medium text-success text-opacity-75 mx-auto mt-4"
+            className="fs-4  text-success text-opacity-75 mx-auto mt-4 pt-lg-3"
             style={{ maxWidth: "600px" }}
           >
             Our comprehensive platform combines AI intelligence with nutritional

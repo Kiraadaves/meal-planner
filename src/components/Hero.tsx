@@ -6,6 +6,7 @@ const Hero = () => {
     <section
       className="py-5 px-3"
       style={{
+        marginTop: "6rem",
         backgroundImage: "url('/bg2.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -19,17 +20,17 @@ const Hero = () => {
               className="text-warning me-1"
               style={{ height: "30px", width: "30px" }}
             />
-            <span className="badge bg-light text-success mb-3 px-3 py-2">
+            <span className="badge fs-6 bg-light text-success mb-3 px-3 py-2">
               AI-Powered Nutrition Planning
             </span>
           </span>
-          <h1 className="display-3 fw-bold text-success mb-4">
+          <h1 className="display-2 fw-bold text-success mb-4">
             Your Personal
             <span className="text-warning d-block">Meal Planning</span>
             Assistant
           </h1>
           <p
-            className="fs-5 fw-bold text-success text-opacity-75 mb-4 mx-auto py-5"
+            className="fs-4 fw-bold text-success text-opacity-75 mb-4 mx-auto py-5"
             style={{ maxWidth: "700px" }}
           >
             Transform your nutrition journey with AI-powered meal planning,
