@@ -58,7 +58,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="row gap-4 justify-content-center">
+        <div className="row gap-4 justify-content-center  px-4">
           {features.map((feature, index) => (
             <div
               key={index}

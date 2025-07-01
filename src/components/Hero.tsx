@@ -42,7 +42,7 @@ const Hero = () => {
             </Link>
             <Link
               to="/search"
-              className="btn btn-outline-success btn-lg px-4 py-2 fw-semibold"
+              className="btn btn-outline-success bg-white text-success btn-lg px-4 py-2 fw-semibold"
             >
               Explore Foods
             </Link>

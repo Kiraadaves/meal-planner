@@ -44,7 +44,10 @@ const HowItWorks = () => {
                 "Log your meals, track progress, and let AI optimize your plans",
             },
           ].map((step, index) => (
-            <div key={index} className={`col-md-3 text-center border border-success-subtle card pt-5 pb-4`}>
+            <div
+              key={index}
+              className={`col-md-3 text-center border border-success-subtle card pt-5 pb-4`}
+            >
               <div
                 className="rounded-circle bg-success text-white fw-bold fs-4 d-flex align-items-center justify-content-center mx-auto mb-3"
                 style={{
